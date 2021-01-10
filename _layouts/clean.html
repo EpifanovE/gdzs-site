@@ -2,7 +2,7 @@
 layout: base
 ---
 <main class="container main-container flex-shrink-0">
-    <div class="row">
+    <div class="row main-container-item">
         <div class="col-12">
             <div class="page-header main-container-item">
                 <h1 class="title page-title">
@@ -13,16 +13,17 @@ layout: base
                     {% endif %}
                 </h1>
             </div>
+        </div>
+    </div>
 
+    <div class="row main-container-item">
+        <div class="col-12">
             <div class="main-container-item">
                 {% include download-banner.html %}
             </div>
-
-            <div class="card main-container-item">
-                <div class="card-body entry">
-                    {{ content }}
-                </div>
-            </div>
         </div>
     </div>
+
+    {{ content }}
+
 </main>

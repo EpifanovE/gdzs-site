@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    {% endif %}
+    <meta name="author" content="Evgeny Epifanov">
+    <title>
+        {% if page.seo_title %}
+        {{ page.seo_title }} | {{ site.title }}
+        {% else %}
+        {{ site.title }}
+        {% endif %}
+    </title>
+
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="/assets/css/custom.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/assets/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/assets/img/favicon/manifest.json">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <meta name="theme-color" content="#111111">
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    {% include header.html %}
+
+    {{ content }}
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <span class="text-muted">© Epifanov E.V., 2021</span>
+        </div>
+    </footer>
+
+    <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

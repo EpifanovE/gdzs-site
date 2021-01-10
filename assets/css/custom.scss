@@ -84,3 +84,15 @@ h1, h2, h3 {
         color: $themeColor;
     }
 }
+
+.help-card {
+    &-icon {
+        color: $themeColor;
+        margin-right: 1rem;
+        font-size: 2rem;
+    }
+
+    &-link {
+        text-decoration: none;
+    }
+}
