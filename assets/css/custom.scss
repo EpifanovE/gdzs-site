@@ -106,3 +106,34 @@ h1, h2, h3 {
     border-right: .2em solid transparent;
     border-left: .2em solid transparent;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    transition: opacity .3s;
+
+    &-image-wrapper {
+        overflow: hidden;
+        display: inline-block;
+        border-radius: 50%;
+        height: 42px;
+        width: 42px;
+        margin-right: 0.5rem;
+    }
+
+    &-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &-text {
+        & span {
+            color: $themeColor;
+        }
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
