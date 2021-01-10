@@ -96,3 +96,13 @@ h1, h2, h3 {
         text-decoration: none;
     }
 }
+
+.navbar-nav {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar-nav .dropdown-toggle::after {
+    border-top: .2em solid;
+    border-right: .2em solid transparent;
+    border-left: .2em solid transparent;
+}
