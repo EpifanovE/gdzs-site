@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    {% endif %}
     <meta name="author" content="Evgeny Epifanov">
     <title>
         {% if page.seo_title %}
@@ -62,7 +66,7 @@
             <span class="text-muted">© Epifanov E.V., 2021</span>
         </div>
     </footer>
-    
+
     <script src="/assets/js/bootstrap.min.js"></script>
 </body>
 

@@ -1,8 +1,9 @@
 title: Расчеты СИЗОД ГДЗС | Android-приложение
 email: eevcode@gmail.com
-description: 
+description: Мобильное приложение для расчета расхода воздуха СИЗОД на посту безопасности ГДЗС.
 baseurl: ""
 url: "https://gdzs.eecode.ru"
+google_play_url: "https://play.google.com/store"
 
 plugins:
   # - jekyll-feed
