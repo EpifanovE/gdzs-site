@@ -1,0 +1,63 @@
+{
+  "name": "gdzs.eecode.ru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config ./_build/webpack.dev.js",
+    "build": "webpack --config ./_build/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpifanovE/gdzs-site.git"
+  },
+  "author": "Evgeny Epifanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EpifanovE/gdzs-site/issues"
+  },
+  "homepage": "https://github.com/EpifanovE/gdzs-site#readme",
+  "browserslist": [
+    "last 3 version",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-arrow-functions": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "animate.css": "^4.1.0",
+    "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.2.2",
+    "bootstrap": "^5.0.0-beta1",
+    "const": "^1.0.0",
+    "css-loader": "^5.0.1",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-debug": "^4.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.5.1",
+    "magnific-popup": "^1.1.0",
+    "owl.carousel2": "^2.2.1",
+    "path": "^0.12.7",
+    "postcss-reporter": "^6.0.1",
+    "readable-stream": "^3.6.0",
+    "sass-loader": "^10.1.1",
+    "sticky-sidebar": "^3.3.1",
+    "style-loader": "^2.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.3.1",
+    "webpack-merge": "^5.7.3",
+    "wow.js": "^1.2.2"
+  }
+}
