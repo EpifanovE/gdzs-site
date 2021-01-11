@@ -27,6 +27,7 @@
     "@babel/plugin-transform-arrow-functions": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
     "@fortawesome/fontawesome-free": "^5.13.0",
+    "@popperjs/core": "^2.6.0",
     "animate.css": "^4.1.0",
     "autoprefixer": "^9.8.0",
     "babel-loader": "^8.2.2",

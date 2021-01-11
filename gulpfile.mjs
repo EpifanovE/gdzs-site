@@ -34,8 +34,7 @@ export const fonts = () => {
 export const jsLibs = () => {
     return gulp.src([
         './node_modules/jquery/dist/jquery.min.js',
-        './node_modules/bootstrap/dist/js/bootstrap.min.js',
-        './node_modules/wow.js/dist/wow.min.js',
+        // './node_modules/wow.js/dist/wow.min.js',
         // './node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
     ])
         .pipe(concat('libs.min.js'))

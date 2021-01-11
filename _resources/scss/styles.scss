@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:wght@400;700&display=swap');
 
-$themeColor: #c0392b;
+@import "_vars.scss";
+
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+@import "./node_modules/bootstrap/scss/utilities";
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -105,33 +110,10 @@ h1, h2, h3 {
     border-left: .2em solid transparent;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    opacity: 1;
-    transition: opacity .3s;
 
-    &-image-wrapper {
-        overflow: hidden;
-        display: inline-block;
-        border-radius: 50%;
-        height: 42px;
-        width: 42px;
-        margin-right: 0.5rem;
-    }
 
-    &-image {
-        max-width: 100%;
-        height: auto;
-    }
-
-    &-text {
-        & span {
-            color: $themeColor;
-        }
-    }
-
-    &:hover {
-        opacity: 0.8;
-    }
-}
+@import "blocks/Hero.scss";
+@import "blocks/NavBar.scss";
+@import "blocks/Logo.scss";
+@import "blocks/Title.scss";
+@import "blocks/QrCode.scss";
