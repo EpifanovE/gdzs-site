@@ -1,0 +1,13 @@
+.PageHeader {
+    padding-top: 68px;
+    background-color:$headerBgColor;
+
+    &__Title {
+        margin-bottom: 0;
+    }
+
+    &__Left {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}

@@ -1,0 +1,8 @@
+.PageTitle {
+    color: $lightTitleColor;
+    font-size: 2rem;
+
+    &::first-letter {
+        color: $themeColor;
+    }
+}

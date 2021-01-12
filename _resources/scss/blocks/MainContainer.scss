@@ -1,0 +1,11 @@
+.MainContainer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    &__Item {
+        margin-bottom: 3rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
