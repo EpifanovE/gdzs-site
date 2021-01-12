@@ -20,7 +20,18 @@
                 <li class="nav-item active">
                     <a class="nav-link" aria-current="page" href="{{ site.url }}">Главная</a>
                 </li>
-                
+                {% if jekyll.environment == "production" %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                        aria-expanded="false">Помощь</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                        <li><a class="dropdown-item" href="/help/">Начало</a></li>
+                        <li><a class="dropdown-item" href="/help/settings/">Настройки</a></li>
+                        <li><a class="dropdown-item" href="/help/calculation/">Расчет</a></li>
+                        <li><a class="dropdown-item" href="/help/journal/">Журнал</a></li>
+                    </ul>
+                </li>
+                {% endif %}
                 <li class="nav-item">
                     <a class="nav-link" href="/contacts/">Контакты</a>
                 </li>
