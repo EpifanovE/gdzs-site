@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-md navbar-dark NavBar fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand Title Logo" href="{{ site.url }}">
-            <div class="Logo__ImageWrapper">
-                <img src="/assets/img/logo.png" alt="{{ site.title }}" class="Logo__Image">
+        <a class="navbar-brand title logo" href="{{ site.url }}">
+            <div class="logo-image-wrapper">
+                <img src="/assets/img/logo.png" alt="{{ site.title }}" class="logo-image">
             </div>
-            <div class="Logo__Text">
+            <div class="logo-text">
                 <span>gdzs.</span>eecode.ru
             </div>
         </a>
@@ -20,7 +20,16 @@
                 <li class="nav-item active">
                     <a class="nav-link" aria-current="page" href="{{ site.url }}">Главная</a>
                 </li>
-                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                        aria-expanded="false">Помощь</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                        <li><a class="dropdown-item" href="/help/">Начало</a></li>
+                        <li><a class="dropdown-item" href="/help/settings/">Настройки</a></li>
+                        <li><a class="dropdown-item" href="/help/calculation/">Расчет</a></li>
+                        <li><a class="dropdown-item" href="/help/journal/">Журнал</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contacts/">Контакты</a>
                 </li>
