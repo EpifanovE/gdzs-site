@@ -76,7 +76,7 @@ h1, h2, h3 {
   margin-bottom: 2rem;
 }
 .Hero__Image {
-  max-width: 300px;
+  max-width: 250px;
 }
 .Hero__Qr {
   margin-right: 1rem;
@@ -145,6 +145,9 @@ h1, h2, h3 {
   text-transform: uppercase;
   font-weight: bold;
 }
+.Title_white {
+  color: #c8d6e5;
+}
 
 .QrCode {
   overflow: hidden;
@@ -208,7 +211,75 @@ h1, h2, h3 {
   }
 }
 
+.Entry {
+  color: #222222;
+}
 .Entry p:last-child {
   margin-bottom: 0;
+}
+
+.HomeSection {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.HomeSection__ImageCol {
+  display: flex;
+  justify-content: flex-start;
+}
+.HomeSection__Image {
+  max-width: 100%;
+}
+.HomeSection__Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.HomeSection__Content ul {
+  text-align: left;
+}
+.HomeSection__Title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.HomeSection__Title::after {
+  content: "";
+  display: block;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 64px;
+  height: 1px;
+  background-color: #ff9f43;
+}
+.HomeSection_inverse .HomeSection__ImageCol {
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  .HomeSection {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .HomeSection__Title::after {
+    margin-left: 0;
+  }
+  .HomeSection__Content {
+    text-align: left;
+  }
+}
+
+.DownloadSection {
+  background-color: #222f3e;
+}
+.DownloadSection__Title {
+  margin-bottom: 2rem;
+}
+.DownloadSection__Qr {
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .DownloadSection__Title::after {
+    margin-left: auto;
+  }
 }
 /*# sourceMappingURL=styles.min.css.map */
