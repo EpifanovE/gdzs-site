@@ -18,7 +18,9 @@
         {% endif %}
     </title>
 
-    {% include counters.html %}
+    {% if jekyll.environment == "production" %}
+        {% include counters.html %}
+    {% endif %}
 
     <link href="/assets/css/libs.min.css" rel="stylesheet">
     <link href="/assets/css/styles.min.css" rel="stylesheet">
