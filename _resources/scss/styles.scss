@@ -1,20 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:wght@400;700&display=swap');
 
-$themeColor: #c0392b;
+@import "_vars.scss";
+
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+@import "./node_modules/bootstrap/scss/utilities";
 
 body {
     font-family: 'Open Sans', sans-serif;
-}
-.main-container {
-    margin-top: 6rem;
-    margin-bottom: 3rem;
-}
-
-.main-container-item {
-    margin-bottom: 3rem;
-    &:last-child {
-        margin-bottom: 0;
-    }
 }
 
 h1,h2,h3,h4,h5,h6, .title {
@@ -24,46 +18,6 @@ h1,h2,h3,h4,h5,h6, .title {
 h1, h2, h3 {
     font-weight: bold;
     text-transform: uppercase;
-}
-
-.title {
-    text-transform: uppercase;
-}
-
-.page-title {
-    line-height: 1.5;
-    &::first-letter {
-        color: $themeColor;
-    }
-
-    &::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 1px;
-        background-color:$themeColor;
-    }
-}
-
-.download-block {
-    background-color: #ecf0f1;
-}
-
-.download-image {
-    display: block;
-    max-width: 200px;
-}
-
-.download-title {
-    font-size: 1.5rem;
-}
-
-.entry {
-    & p {
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
 }
 
 .contact {
@@ -105,33 +59,18 @@ h1, h2, h3 {
     border-left: .2em solid transparent;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    opacity: 1;
-    transition: opacity .3s;
 
-    &-image-wrapper {
-        overflow: hidden;
-        display: inline-block;
-        border-radius: 50%;
-        height: 42px;
-        width: 42px;
-        margin-right: 0.5rem;
-    }
 
-    &-image {
-        max-width: 100%;
-        height: auto;
-    }
-
-    &-text {
-        & span {
-            color: $themeColor;
-        }
-    }
-
-    &:hover {
-        opacity: 0.8;
-    }
-}
+@import "blocks/Hero.scss";
+@import "blocks/NavBar.scss";
+@import "blocks/Logo.scss";
+@import "blocks/Title.scss";
+@import "blocks/QrCode.scss";
+@import "blocks/PageHeader.scss";
+@import "blocks/PageTitle.scss";
+@import "blocks/MainContainer.scss";
+@import "blocks/DownloadBanner.scss";
+@import "blocks/Entry.scss";
+@import "blocks/HomeSection.scss";
+@import "blocks/HomeWrapper.scss";
+@import "blocks/DownloadSection.scss";

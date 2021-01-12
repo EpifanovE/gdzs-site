@@ -1,25 +1,18 @@
 ---
 layout: base
 ---
-<main class="container main-container flex-shrink-0">
+
+{% include page-header.html %}
+
+<main class="container MainContainer flex-shrink-0">
     <div class="row">
         <div class="col-12">
-            <div class="page-header main-container-item">
-                <h1 class="title page-title">
-                    {% if page.title %}
-                    {{ page.title }}
-                    {% else %}
-                    {{ site.title }}
-                    {% endif %}
-                </h1>
-            </div>
-
-            <div class="main-container-item">
+            <div class="MainContainer__Item">
                 {% include download-banner.html %}
             </div>
 
-            <div class="card main-container-item">
-                <div class="card-body entry">
+            <div class="card MainContainer__Item">
+                <div class="card-body Entry">
                     {{ content }}
                 </div>
             </div>

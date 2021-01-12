@@ -1,0 +1,31 @@
+.Logo {
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        transition: opacity .3s;
+        color: $lightTitleColor;
+
+        &:hover {
+            color: $lightTitleColor;
+        }
+    
+        &__ImageWrapper {
+            overflow: hidden;
+            display: inline-block;
+            border-radius: 50%;
+            height: 42px;
+            width: 42px;
+            margin-right: 0.5rem;
+        }
+    
+        &__Image {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        &__Text {
+            & span {
+                color: $themeColor;
+            }
+        }
+}

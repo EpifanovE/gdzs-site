@@ -1,0 +1,9 @@
+.Title {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &_white {
+        color: $lightTitleColor;
+    }
+}

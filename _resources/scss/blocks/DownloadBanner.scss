@@ -1,0 +1,24 @@
+.DownloadBanner {
+    background-color: #ecf0f1;
+
+    &__Title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__Qr {
+        margin-right: 1rem;
+        max-width: 100px;
+    }
+
+    &__Image {
+        display: block;
+        max-width: 200px;
+    }
+
+    @include media-breakpoint-up(md) {
+        &__Title {
+            margin-bottom: 0;
+        }
+    }
+}

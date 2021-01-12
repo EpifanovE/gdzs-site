@@ -1,0 +1,71 @@
+.Hero {
+    background-color: $headerBgColor;
+    padding-top: 68px;
+
+    &__Title {
+        color: $lightTitleColor;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        
+        &::after {
+            content: "";
+            display: block;
+            margin-top: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 64px;
+            height: 1px;
+            background-color:$themeColor;
+        }
+
+        &::first-letter {
+            color: $themeColor;
+        }
+    }
+
+    &__SubTitle {
+        color: $lightTextColor;
+    }
+
+    &__Description {
+        color: $lightTextColor;
+        margin-bottom: 2rem;
+    }
+
+    &__Image {
+        max-width: 250px;
+    }
+
+    &__Qr {
+        margin-right: 1rem;
+    }
+
+    &__Left {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &__Right {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        &__Title {
+            font-size: 4rem;
+
+            &::after {
+                margin-left: 0;
+            }
+        }
+
+        &__Description {
+            margin-bottom: 4rem;
+        }
+
+        &__Left {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}

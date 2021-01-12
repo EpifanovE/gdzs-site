@@ -1,0 +1,19 @@
+.DownloadSection {
+    background-color: $headerBgColor;
+
+    &__Title {
+        margin-bottom: 2rem;
+    }
+
+    &__Qr {
+        margin-bottom: 2rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        &__Title {
+            &::after {
+                margin-left: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<header class="PageHeader">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 PageHeader__Left">
+                <h1 class="PageTitle Title PageHeader__Title">
+                    {% if page.title %}
+                    {{ page.title }}
+                    {% else %}
+                    {{ site.title }}
+                    {% endif %}
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,9 @@
+.NavBar {
+    color: $lightTextColor;
+    background-color: $headerBgColor;
+    border-bottom: 1px solid $lightBorderColor;
+
+    & .nav-link {
+        color: $lightTextColor;
+    }
+}

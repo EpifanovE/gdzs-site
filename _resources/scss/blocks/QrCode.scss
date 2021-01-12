@@ -1,0 +1,9 @@
+.QrCode {
+    overflow: hidden;
+    max-width: 150px;
+
+    &__Image {
+        max-width: 100%;
+        image-rendering: pixelated;
+    }
+}
