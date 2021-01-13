@@ -196,6 +196,7 @@ h1, h2, h3 {
 .DownloadBanner__Title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: #222222;
 }
 .DownloadBanner__Qr {
   margin-right: 1rem;
@@ -212,9 +213,16 @@ h1, h2, h3 {
 }
 
 .Entry {
+  color: #333333;
+}
+.Entry h2 {
+  font-size: 1.75rem;
   color: #222222;
 }
-.Entry p:last-child {
+.Entry p, .Entry .HelpImage {
+  margin-bottom: 2rem;
+}
+.Entry p:last-child, .Entry .HelpImage:last-child {
   margin-bottom: 0;
 }
 
@@ -281,5 +289,30 @@ h1, h2, h3 {
   .DownloadSection__Title::after {
     margin-left: auto;
   }
+}
+
+.ImageLink {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.ImageLink:hover {
+  opacity: 0.8;
+}
+
+.HelpImage {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.HelpImage__Wrap {
+  padding: 0.5rem;
+  border: 1px solid #c8d6e5;
+  border-radius: 3px;
+  max-width: 300px;
+  overflow: hidden;
+}
+.HelpImage__Img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=styles.min.css.map */

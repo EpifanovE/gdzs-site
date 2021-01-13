@@ -1,0 +1,17 @@
+.HelpImage {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    &__Wrap {
+        padding: .5rem;
+        border: 1px solid $darkBorderColor;
+        border-radius: 3px;
+        max-width: 300px;
+        overflow: hidden;
+    }
+
+    &__Img {
+        max-width: 100%;
+    }
+}

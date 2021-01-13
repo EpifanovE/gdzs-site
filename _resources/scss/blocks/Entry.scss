@@ -1,6 +1,14 @@
 .Entry {
-    color: #222222;
-    & p {
+    color: $darkTextColor;
+
+    & h2 {
+        font-size: 1.75rem;
+        color: $darkTitleColor;
+    }
+
+    & p,
+    & .HelpImage {
+        margin-bottom: 2rem;
         &:last-child {
             margin-bottom: 0;
         }

@@ -1,0 +1,9 @@
+.ImageLink {
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .3s;
+
+    &:hover {
+        opacity: .8;
+    }
+}
