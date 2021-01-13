@@ -189,6 +189,9 @@ h1, h2, h3 {
 .MainContainer__Item:last-child {
   margin-bottom: 0;
 }
+.MainContainer__SubTitle {
+  margin-bottom: 0;
+}
 
 .DownloadBanner {
   background-color: #ecf0f1;
@@ -217,6 +220,11 @@ h1, h2, h3 {
 }
 .Entry h2 {
   font-size: 1.75rem;
+  color: #222222;
+}
+.Entry h3 {
+  font-size: 1.5rem;
+  text-transform: none;
   color: #222222;
 }
 .Entry p, .Entry .HelpImage {
